@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YALA</title>
+    <link rel="stylesheet" href="willpattu.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <section class="header">
+        <div class="swiper">
+            <div class="slider">
+                <div class="slide"><img src="images/Leopard-srilanka-Getty.jpg"></div>
+            </div>
+            <div class="overlay">
+                <nav id="navig">
+                    <a href="home.html"><img src="images/logo.jpeg"></a>
+                    <div class="nav" id="nav">
+                        <i class="bx bx-x" onclick="hide()"></i>
+                        <ul id="menu">
+                            <li><a href="home.html">HOME</a></li>
+                            <li><a href="wildlife introduction.html">WILD LIFE INTRODUCTION</a></li>
+                            <li><a href="leopard.html">SRILANKAN LEOPARD</a></li>
+                            <li><a href="dwc.html">DWC</a></li>
+                            <li><a href="animal.html">ANIMALS</a></li>
+                        </ul>
+                    </div>
+                    <i class="bx bx-menu" onclick="show()"></i>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <section class="introduction">  <!--Introduction-->
+        <h1>WILPATTU NATIONAL PARK</h1>
+        <p>
+            Experience Sri Lanka's most elusive wildlife in the vast seclusion of Wilpattu National Park. 
+            Occupying a vast swathe of land bordering the copper-sand beaches of the north west coast, 
+            the ancient ruins of the Cultural Triangle and the Northern Province, this is Sri Lanka's 
+            largest and oldest game reserve. Home to myriad endemic species, the park fosters sensational bird life, 
+            Asian Elephants, Sri Lankan Leopards, Sri Lankan Sloth Bears.
+        </p>
+    </section>
+    <section class="sub-sections" id="hieght"> <!--2 sub section-->
+        <div class="row-two">
+            <div class="col">
+                <img src="images/wilmam.webp">
+                <div class="test">
+                    <h2>Mammals</h2>
+                <p>
+                    On a Wilpattu safari you have the chance of encountering 31 species of mammals residing within Wilpattu, 
+                    of which 4 are threatened. These are the Sri Lankan Elephant, Sri Lankan Sloth Bear,
+                    
+                <br>
+                <br>
+                <br>
+                    Sri Lankan Leopard and the Water Buffalo. Other animal species that can be seen on safari 
+                    drives are the Sambar and Spotted Deer, Mongoose, Mouse Deer, and Shrew.
+                </p>
+                </div>
+            </div>
+            <div class="col">
+                <img src="images/wilbird.jpg">
+                <div class="test">
+                    <h2>Birdlife</h2>
+                <p>
+                    Many species of Owl, Tern, Gull, Eagle, Kite and Buzzard along with the Painted Stork, 
+                    Sri Lankan Junglefowl and the Little Cormorant can be found at the Wilpattu National Park. 
+                <br>
+                <br>
+                <br>
+                    Wetland birdlife includes the Garganey, Pintail, Whistling Teal, Spoonbill, White Ibis, Large White Egret, 
+                    Cattle Egret and Purple Heron.
+                </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content" id="hieght">
+        <h2>LOCATION</h2> <!--3 sub section-->
+        <div class="row">
+            <div class="content-col order">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7922.582126771105!2d79.85774314033073!3d6.855674422570896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25b080140456d%3A0x2336ef2aa034913!2sDehiwala%2C%20Dehiwala-Mount%20Lavinia!5e0!3m2!1sen!2slk!4v1704563934825!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="content-col order2">
+                <p>
+                    Wilpattu National Park is in the north west of Sri Lanka, around 35km west of Anuradhapura and 32km north of Puttalam. 
+                    It takes around 90-minutes to reach the reserve from Uga Ulagalla, and is around a 4-hour drive from Uga Residence in
+                     Colombo. 
+                <br>
+                <br>   
+                    From Wilpattu National Park's main entrance at Hunuvilagama, 
+                    the track weaves through beautiful lowland forest for around 10-kilometres before you reach the more open wildlife areas.
+                </p>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <footer>
+        <div class="footer">
+            <div class="icon">
+                <a href=""><i class='bx bxl-facebook-circle'></i></a>
+                <a href=""><i class='bx bxl-instagram' ></i></a>
+                <a href=""><i class='bx bxl-twitter' ></i></a>
+                <a href=""><i class='bx bxl-google-plus' ></i></a>
+                <a href=""><i class='bx bxl-youtube' ></i></a>
+            </div>
+        </div>
+        <div class="bot">
+            <p>
+                Copyright &#169; 2023; Designed By <span class="foot-name">CB013034</span>
+            </p>
+        </div>
+        <!-- References
+        Anon., n.d. mahoora. [Online] 
+        Available at: https://www.mahoora.com/national-parks-sri-lanka/popular-national-parks-sri-lanka/wilpattu-national-park-sri-lanka.html
+        Anon., n.d. wilpattu NATIONAL PARK. [Online] 
+        Available at: https://www.ugaescapes.com/destinations/wilpattu-national-park.html -->
+    </footer>
+<script>
+
+    var nav = document.getElementById("nav");
+
+    function show(){
+        nav.style.right = "0"
+    }
+
+    function hide(){
+        nav.style.right = "-350px"
+    }
+
+</script>
+<script>
+
+    var navig = document.getElementById("navig");
+    var menu = document.getElementById("menu");
+
+    window.onscroll=function(){
+        if(window.pageYOffset >= menu.offsetTop){
+            navig.classList.add("sticky")
+        }
+        else{
+            navig.classList.remove("sticky")
+        }
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head> <!--main area-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wild life in SriLanka</title>
+        <link rel="stylesheet" href="home.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    </head>
+    <body onload="slider()">
+        <section class="header">
+            <div class="swiper">
+                <div class="slider">
+                    <div class="slide"><img src="images/Leopard-srilanka-Getty.jpg"  id="slideImg"></div>
+                </div>
+                <div class="overlay">
+                    <nav id="navig">
+                        <a href="home.html"><img src="images/logo.jpeg"></a>
+                        <div class="nav" id="nav">
+                            <i class="bx bx-x" onclick="hide()"></i>
+                            <ul id="menu">
+                                <li><a href="home.html">HOME</a></li>
+                                <li><a href="wildlife introduction.html">WILD LIFE INTRODUCTION</a></li>
+                                <li><a href="leopard.html">SRILANKAN LEOPARD</a></li>
+                                <li><a href="dwc.html">DWC</a></li>
+                                <li><a href="animal.html">ANIMALS</a></li>
+                            </ul>
+                        </div>
+                        <i class="bx bx-menu" onclick="show()"></i>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <section class="introduction">  <!--Introduction-->
+            <h1>SriLanka Wildlife</h1>
+            <p>
+                Sri Lanka's wildlife is as varied as the island itself, 
+                ranging from elephants and leopards to marine life and a vast number of different birds, 
+                and Sri Lanka is now one of the best places in the world to see whales, including the mighty blue whale.
+            </p>
+        </section>
+        <section class="sub-sections" id="twosubs"> <!--2 sub section-->
+            <div class="row">
+                <div class="col">
+                    <img src="images/biodiversity.avif">
+                    <h2>BIODIVERSITY</h2>
+                    <p>
+                        Sri Lanka has a striking variety of forest types brought about by spatial variations in rainfall, 
+                        altitude, and soil. The forests have been categorized broadly as tropical wet lowland evergreen forests 
+                        ,wet sub-montane forests, wet montane forests, tropical dry mixed evergreen forests in the dry lowlands, 
+                        with riverine vegetation along river.
+                    </p>
+                    <p>
+                        <ul class="list">
+                            <li>4000 species of flowering plants</li>
+                            <li>107 species of freshwater fish</li>
+                            <li>59 species of amphibians</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="col">
+                    <img src="images/conservatin.jpg">
+                    <h2>CONSERVATION EFFORTS</h2>
+                    <p>
+                        Wildlife conservation is the practice of protecting plant and animal species and their habitats. 
+                        As part of the world’s ecosystems, wildlife provides balance and stability to nature's processes. 
+                        The goal of wildlife conservation is to ensure the survival of these species, 
+                        and to educate people on living sustainably with other species.
+                    </p>
+                    <p>
+                        <ol class="list">
+                            <li>tree planting,</li>
+                            <li>recycling</li>
+                            <li>wildlife habitat creation</li>
+                        </ol>
+                    </p>
+                </div>
+                <div class="col">
+                    <img src="images/safari.webp">
+                    <h2>SAFARi</h2>
+                    <p>
+                        With safaris on land, water, and by foot, you'll have the best chance of spotting some of Sri Lanka's iconic wildlife, 
+                        including herds of native elephants in their natural habitat, leopards, thousands of birds, slender lorises, 
+                        monkeys, crocodiles, buffalo, deer and jackals. 
+                    </p>
+                    <p>
+                        <ul class="list">
+                            <li>Udawalawe National Park</li>
+                            <li>Wasgamuwa National Park</li>
+                            <li>Minneriya National Park</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <footer>
+            <div class="footer">
+                <div class="icon">
+                    <a href=""><i class='bx bxl-facebook-circle'></i></a>
+                    <a href=""><i class='bx bxl-instagram' ></i></a>
+                    <a href=""><i class='bx bxl-twitter' ></i></a>
+                    <a href=""><i class='bx bxl-google-plus' ></i></a>
+                    <a href=""><i class='bx bxl-youtube' ></i></a>
+                </div>
+            </div>
+            <div class="bot">
+                <p>
+                    Copyright &#169; 2023; Designed By <span class="foot-name">CB013034</span>
+                </p>
+            </div>
+            <!-- References
+            Anon., n.d. intrepid. [Online] 
+            Available at: https://www.intrepidtravel.com/ca/sri-lanka/sri-lanka-safari-153853
+            Anon., n.d. NATIONAL GEOGRAPHIC. [Online] 
+            Available at: https://education.nationalgeographic.org/resource/wildlife-conservation/
+            Anon., n.d. reddot. [Online] 
+            Available at: https://www.reddottours.com/sri-lanka-activities/wildlife-in-sri-lanka#:~:text=Sri%20Lanka's%20wildlife%20is%20as,including%20the%20mighty%20blue%20whale.
+            [Accessed 19 1 2024].
+            Anon., n.d. Sri Lanka Biodiversity. [Online] 
+            Available at: https://lk.chm-cbd.net/ecosystems/forest-and-related-ecosystems
+            Jayawardene, J., n.d. amazinglanka. [Online] 
+            Available at: https://amazinglanka.com/wp/sri-lankas-biodiversity/ -->
+        </footer>
+    <script>
+
+        var navig = document.getElementById("navig");
+        var menu = document.getElementById("menu");
+
+        window.onscroll=function(){
+            if(window.pageYOffset >= menu.offsetTop){
+                navig.classList.add("sticky")
+            }
+            else{
+                navig.classList.remove("sticky")
+            }
+        }
+
+    </script>
+    <script>
+
+        var nav = document.getElementById("nav");
+
+        function show(){
+            nav.style.right = "0"
+        }
+
+        function hide(){
+            nav.style.right = "-350px"
+        }
+
+    </script>
+    <script>
+        var slideImg = document.getElementById("slideImg");
+        var images = new Array(
+            "images/Leopard-srilanka-Getty.jpg",
+            "images/move1.jpg",
+            "images/move2.jpg",
+            "images/move3.jpg"
+        );
+        var len = images.length
+        var i = 0;
+        function slider(){
+            if(i > len-1){
+                i=0;
+            }
+            slideImg.src = images[i];
+            i++;
+            setTimeout("slider()",3000);
+        }
+    </script>
+    </body>
+</html>
